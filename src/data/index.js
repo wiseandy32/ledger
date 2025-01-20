@@ -20,6 +20,7 @@ import thetaIcon from "@/assets/theta-logo.png";
 import fileCoinIcon from "@/assets/filecoin-logo.png";
 import nanoIcon from "@/assets/nano-logo.png";
 import shibaIcon from "@/assets/shiba-logo.png";
+import trumpIcon from "@/assets/trump-logo.png";
 // import stellarIcon from "@/assets/stellar-logo.jfif";
 // import rippleIcon from "@/assets/ripple-logo.png";
 // import tetherIcon from "@/assets/tether-logo.png";
@@ -32,6 +33,7 @@ import usdtQRCode from "@/assets/usdt-trc20-qr.jpg";
 import dogeQRCode from "@/assets/doge-qr.jpg";
 import algoQRCode from "@/assets/algo-qr.jpg";
 import solQRCode from "@/assets/sol-qr.jpg";
+import trumpQRCode from "@/assets/trump-qr.jpg";
 import { DollarSign } from "lucide-react";
 
 export const registrationFormField = [
@@ -151,6 +153,7 @@ export const wallets = [
   { name: "LTC", icon: ltcIcon, balance: 0.0 },
   { name: "ALGO", icon: algoIcon, balance: 0.0, value: "ALGO_balance" },
   { name: "SOL", icon: solIcon, balance: 0.0, value: "SOL_balance" },
+  { name: "TRUMP", icon: trumpIcon, balance: 0.0, value: "TRUMP_balance" },
   { name: "BNB", icon: bnbIcon, balance: 0.0 },
   { name: "QTUM", icon: qtumIcon, balance: 0.0 },
   { name: "TEZOS", icon: tezosIcon, balance: 0.0 },
@@ -175,6 +178,7 @@ export const depositMethods = [
   { name: "DOGEcoin", icon: dogeIcon, path: "dogecoin" },
   { name: "ALGO", icon: algoIcon, path: "algo" },
   { name: "Solana", icon: solIcon, path: "sol" },
+  { name: "Trump", icon: trumpIcon, path: "trump" },
 ];
 
 export const paymentGateways = [
@@ -224,14 +228,23 @@ export const paymentGateways = [
   {
     type: "Sol",
     value: "SOL_balance",
+    icon: solIcon,
     qrCode: solQRCode,
     walletAddress: "BsfZQAEfvbkxfDQFFGqXfQNVV7y8L6rCprs7MY3VykSf",
   },
   {
     type: "Algo",
     value: "ALGO_balance",
+    icon: algoIcon,
     qrCode: algoQRCode,
     walletAddress: "YCAFLK3SGL4EHGKI7FG2NBWP5JWCMNID3PINF5F3QLQXJMOKRC4SDA36TM",
+  },
+  {
+    type: "Trump",
+    value: "Trump_balance",
+    icon: trumpIcon,
+    qrCode: trumpQRCode,
+    walletAddress: "2perJNJLGXiVgqEK8HJLbgrDRKmfGLRAyvZZh9GPAzx6",
   },
 ];
 
@@ -299,5 +312,9 @@ export const withdrawalOptions = [
   {
     title: "SHIBA",
     value: "shiba_balance",
+  },
+  {
+    title: "TRUMP",
+    value: "TRUMP_balance",
   },
 ];
